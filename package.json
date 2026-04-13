@@ -63,7 +63,7 @@
         "conventional-changelog-cli": "^5.0.0",
         "cors": "^2.8.5",
         "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^9.13.0",
+        "eslint": "^10.2.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.4",
         "express": "^5.2.1",
