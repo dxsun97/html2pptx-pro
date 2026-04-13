@@ -1,0 +1,11 @@
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
+
+/* Examples page: move h2 border from top to bottom */
+.vp-doc h2 {
+  border-top: none !important;
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+  margin-top: 24px !important;
+  padding-top: 0 !important;
+  padding-bottom: 16px !important;
+}

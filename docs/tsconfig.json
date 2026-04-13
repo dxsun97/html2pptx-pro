@@ -1,0 +1,11 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "types": ["node"],
+        "rootDir": "../",
+        "declaration": false,
+        "declarationDir": null,
+        "skipLibCheck": true
+    },
+    "include": [".vitepress/**/*.ts", ".vitepress/**/*.vue"]
+}

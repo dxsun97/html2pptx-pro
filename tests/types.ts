@@ -1,0 +1,27 @@
+export interface PlatformDetails {
+    name: string;
+    version: string;
+}
+
+export interface ScreenshotRequest {
+    screenshot: string;
+    test: string;
+    platform: PlatformDetails;
+    devicePixelRatio: number;
+    windowWidth: number;
+    windowHeight: number;
+}
+
+export interface TestResultRequest {
+    pptxBase64: string;
+    test: string;
+    platform: PlatformDetails;
+    slideCount: number;
+    windowWidth: number;
+    windowHeight: number;
+}
+
+export interface Argv {
+    port?: number;
+    cors?: number;
+}
