@@ -6,7 +6,6 @@ image.jpg
 /.project
 /.settings/
 node_modules/
-package-lock.json
 .vscode/
 .envrc
 *.sublime-workspace
