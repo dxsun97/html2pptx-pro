@@ -10,6 +10,9 @@ export default defineConfig({
             alias: {
                 'html2pptx-pro': path.resolve(__dirname, '../../src/index.ts')
             }
+        },
+        ssr: {
+            noExternal: ['lz-string']
         }
     },
     title: 'html2pptx-pro',
