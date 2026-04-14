@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a bug or unexpected behavior in html2pptx-pro.
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before submitting a bug report.
+      options:
+        - label: I am using the [latest version](https://github.com/dxsun97/html2pptx-pro/releases) of html2pptx-pro
+          required: true
+        - label: I tested with the non-minified build and checked the browser console for errors
+          required: true
+        - label: I searched [existing issues](https://github.com/dxsun97/html2pptx-pro/issues) and this has not already been reported
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug.
+      placeholder: Describe the bug...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: I expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: >
+        Steps to reproduce the behavior. A minimal reproduction is strongly preferred.
+        Provide a link to a [jsFiddle](https://jsfiddle.net/), [CodeSandbox](https://codesandbox.io/),
+        or a minimal HTML snippet that demonstrates the issue.
+      placeholder: |
+        1. Create an element with...
+        2. Call html2pptx(element, { ... })
+        3. Open the generated PPTX
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-code
+    attributes:
+      label: Minimal Code Example
+      description: If applicable, paste a minimal code snippet that reproduces the issue.
+      render: typescript
+
+  - type: input
+    id: version
+    attributes:
+      label: html2pptx-pro Version
+      description: Which version of html2pptx-pro are you using? (Run `npm list html2pptx-pro` to check.)
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser(s) does this occur in?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser Version
+      placeholder: e.g. Chrome 125.0
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or generated PPTX files that help explain the problem.

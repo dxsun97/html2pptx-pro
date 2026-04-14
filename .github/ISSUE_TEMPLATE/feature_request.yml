@@ -1,0 +1,60 @@
+name: Feature Request
+description: Suggest a new feature or improvement for html2pptx-pro.
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      options:
+        - label: I searched [existing issues](https://github.com/dxsun97/html2pptx-pro/issues) and this feature has not already been requested
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: >
+        Describe the problem or limitation you are experiencing.
+        A clear problem statement helps us understand the motivation.
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution or behavior you would like.
+      placeholder: It would be helpful if...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or workarounds you have considered.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: What area does this feature relate to?
+      options:
+        - CSS property support
+        - Layout / positioning
+        - Text rendering
+        - Image handling
+        - API / options
+        - Output formats
+        - Performance
+        - Documentation
+        - Other
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, mockups, or examples that illustrate the request.
