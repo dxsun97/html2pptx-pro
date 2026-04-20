@@ -1,4 +1,4 @@
-import { fromCodePoint, toCodePoints } from 'css-line-break';
+import { fromCodePoint, toCodePoints } from '../lib';
 
 const testRangeBounds = (document: Document) => {
     const TEST_HEIGHT = 123;

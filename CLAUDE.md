@@ -91,6 +91,16 @@ html2pptx-pro is a library that converts HTML elements to PowerPoint presentatio
 - `dom-normalizer.ts` — Pre-render DOM normalization
 - `text-container.ts` — Text node container
 
+#### Vendored Libraries (`src/lib/`)
+
+- `unicode.ts` — Shared `toCodePoints` / `fromCodePoint` utilities
+- `line-break.ts` — CSS line breaking (UAX #14), provides `LineBreaker`
+- `line-break-trie.ts` — Base64-encoded Unicode line-break trie data
+- `grapheme-break.ts` — Grapheme cluster breaking (UAX #29), provides `splitGraphemes`
+- `grapheme-break-trie.ts` — Base64-encoded Unicode grapheme-break trie data
+- `utrie.ts` — Unicode Trie data structure (`createTrieFromBase64`, `Trie` class)
+- `index.ts` — Re-exports: `toCodePoints`, `fromCodePoint`, `LineBreaker`, `splitGraphemes`
+
 #### CSS Parsing (`src/css/`)
 
 - `index.ts` — CSS declaration parser entry
@@ -187,8 +197,9 @@ pptx.write({ outputType: 'arraybuffer' }); // ArrayBuffer
 ## 6. Dependencies
 
 - `pptxgenjs` ^4.0.1 — PowerPoint generation (external in rollup, not bundled)
-- `css-line-break` ^2.1.0 — CSS line breaking rules
-- `text-segmentation` ^1.0.3 — Unicode text segmentation
+- `css-line-break` — Vendored in `src/lib/` (originally by Niklas von Hertzen, MIT)
+- `text-segmentation` — Vendored in `src/lib/` (originally by Niklas von Hertzen, MIT)
+- `utrie` — Vendored in `src/lib/` (originally by Niklas von Hertzen, MIT)
 
 ## 7. Testing
 
