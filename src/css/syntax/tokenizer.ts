@@ -1,6 +1,6 @@
 // https://www.w3.org/TR/css-syntax-3
 
-import { fromCodePoint, toCodePoints } from 'css-line-break';
+import { fromCodePoint, toCodePoints } from '../../lib';
 
 export const enum TokenType {
     STRING_TOKEN,

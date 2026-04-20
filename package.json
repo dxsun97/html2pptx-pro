@@ -124,9 +124,7 @@
         "docs:preview": "vitepress preview docs"
     },
     "dependencies": {
-        "css-line-break": "^2.1.0",
-        "pptxgenjs": "^4.0.1",
-        "text-segmentation": "^1.0.3"
+        "pptxgenjs": "^4.0.1"
     },
     "lint-staged": {
         "{src,tests}/**/*.ts": [
